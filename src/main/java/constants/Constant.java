@@ -16,7 +16,7 @@ public class Constant {
     }
 
     public static class Accounts {
-        public static final String LOGIN = "test";
+        public static final String LOGIN = "test2";
         public static final String PASSWORD = "test";
 
     }
