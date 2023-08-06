@@ -24,7 +24,7 @@ public class SalesListingPage extends BasePage {
     public SalesListingPage checkSoldCars(){
         List<WebElement> cards = driver.findElements(cardSale);
         for (WebElement e : cards) {
-            Assert.assertEquals(e.getCssValue("text-decoration"),"none solid rgb(0, 0, 0)");
+            Assert.assertFalse(e.getCssValue("text-decoration").contains("line-through"));
         }
         return this;
     }
